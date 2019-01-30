@@ -30,10 +30,11 @@ public class Watcher {
 				    } catch (InterruptedException x) {
 				        return;
 				    }
+				 
 				System.out.println("inside loop");
 
 				List<WatchEvent<?>> events = watckKey.pollEvents();
-				for (WatchEvent event : events) {
+				for (WatchEvent<?> event : events) {
 					if (event.kind() == StandardWatchEventKinds.ENTRY_CREATE) {
 						System.out.println("Created: " + event.context().toString());
 					}
