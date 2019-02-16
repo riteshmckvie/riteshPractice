@@ -2,15 +2,14 @@ package com.ritesh.practice.collections;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
 
-public class ArrayList {
+public class List {
 
 	/**
 	 * 
 	 */
 	public static void main(String[] args) {
-		List<String> list = new java.util.ArrayList<>();
+		java.util.List<String> list = new java.util.ArrayList<>();
 		list.add("mahesh");
 		list.add("ami");
 		Iterator<String> elemIter = list.iterator();
@@ -28,7 +27,7 @@ public class ArrayList {
 		
 		
 		// Create a link list which stores integer elements 
-        List<Integer> l = new LinkedList<Integer>(); 
+        java.util.List<Integer> l = new LinkedList<Integer>(); 
   
         // Now add elements to the Link List 
         l.add(2); 
@@ -36,7 +35,7 @@ public class ArrayList {
         l.add(4); 
   
         // Make another Link List which stores integer elements 
-        List<Integer> s=new LinkedList<Integer>(); 
+        java.util.List<Integer> s=new LinkedList<Integer>(); 
         s.add(7); 
         s.add(8); 
         s.add(9); 
