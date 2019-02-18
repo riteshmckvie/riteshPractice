@@ -1,5 +1,6 @@
 package com.ritesh.practice.collections;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -22,6 +23,11 @@ public class List {
 		performVectorList();
 		performStackList();
 		performConccurrntOperation();
+		Insurance insurance = new Insurance("Arogya", "Health");
+		Insurance insurance1 = new Insurance("Arogya", "Health");
+
+		java.util.List<Insurance> insuranceList = new ArrayList<>();
+		insuranceList.add(insurance);
 
 		while (elemIter.hasNext()) {
 			System.out.println(elemIter.next());
