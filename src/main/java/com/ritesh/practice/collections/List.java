@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class List {
 
@@ -20,6 +21,7 @@ public class List {
 		performLinkedList();
 		performVectorList();
 		performStackList();
+		performConccurrntOperation();
 
 		while (elemIter.hasNext()) {
 			System.out.println(elemIter.next());
@@ -50,6 +52,16 @@ public class List {
 			}
 		}
 
+	}
+
+	private static void performConccurrntOperation() {
+		CopyOnWriteArrayList<String> arrayList= new CopyOnWriteArrayList<>();
+		arrayList.add("23");
+		arrayList.forEach(str->{
+			if(str.equals("23")) {
+				arrayList.add("24");
+			}
+		});
 	}
 
 	private static void performStackList() {
