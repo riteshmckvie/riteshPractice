@@ -17,6 +17,7 @@ public class Queue {
 		priorityQ.add(2);
 		System.out.println(priorityQ);
 		
+		
 	}
 
 }
