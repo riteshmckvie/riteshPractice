@@ -9,7 +9,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class List {
 
-	private static boolean add;
 
 	/**
 	 * 
@@ -72,7 +71,7 @@ public class List {
 	private static void performStackList() {
  Stack<String> stack = new Stack<>();
  stack.push("12");
- add = stack.add("13");//uses vector while addition
+ stack.add("13");//uses vector while addition
  
 	}
 
