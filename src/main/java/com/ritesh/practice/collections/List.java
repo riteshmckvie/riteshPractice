@@ -9,7 +9,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class List {
 
-
 	/**
 	 * 
 	 */
@@ -59,20 +58,20 @@ public class List {
 	}
 
 	private static void performConccurrntOperation() {
-		CopyOnWriteArrayList<String> arrayList= new CopyOnWriteArrayList<>();
+		CopyOnWriteArrayList<String> arrayList = new CopyOnWriteArrayList<>();
 		arrayList.add("23");
-		arrayList.forEach(str->{
-			if(str.equals("23")) {
+		arrayList.forEach(str -> {
+			if (str.equals("23")) {
 				arrayList.add("24");
 			}
 		});
 	}
 
 	private static void performStackList() {
- Stack<String> stack = new Stack<>();
- stack.push("12");
- stack.add("13");//uses vector while addition
- 
+		Stack<String> stack = new Stack<>();
+		stack.push("12");
+		stack.add("13");// uses vector while addition
+
 	}
 
 	private static void performVectorList() {
