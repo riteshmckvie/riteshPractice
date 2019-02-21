@@ -24,7 +24,6 @@ public class List {
 		performStackList();
 		performConccurrntOperation();
 		Insurance insurance = new Insurance("Arogya", "Health");
-		Insurance insurance1 = new Insurance("Arogya", "Health");
 
 		java.util.List<Insurance> insuranceList = new ArrayList<>();
 		insuranceList.add(insurance);
