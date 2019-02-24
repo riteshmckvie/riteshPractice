@@ -1,7 +1,7 @@
 package com.ritesh.practice.threading;
 
 public class DaemonThread {
-
+	
 	public static void main(String[] args) {
 
 		Thread t1 = new Thread(new UserThread());
