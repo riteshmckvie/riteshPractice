@@ -17,7 +17,6 @@ public class DaemonThread {
 		 */
 
 	}
-
 }
 
 class UserThread implements Runnable {

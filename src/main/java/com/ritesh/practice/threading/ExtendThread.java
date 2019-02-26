@@ -22,7 +22,7 @@ public class ExtendThread extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("runing this :"+Thread.currentThread().getName()+i);
+			System.out.println("runing this :"+Thread.currentThread().getName()+"with state "+Thread.currentThread().getState()+" "+i);
 		}
     }
 	
