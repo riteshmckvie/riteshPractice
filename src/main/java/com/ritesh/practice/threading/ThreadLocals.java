@@ -8,7 +8,6 @@ public class ThreadLocals implements Runnable {
 		ThreadLocals obj = new ThreadLocals();
         for(int i=0 ; i<10; i++){
             Thread t = new Thread(obj, ""+i);
-            //Thread.sleep(new Random().nextInt(1000));
             t.start();
         }
 	}
